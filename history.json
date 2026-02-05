@@ -1,0 +1,2178 @@
+[
+  {
+    "time": "2026-02-06 01:24",
+    "data": {
+      "technical": [
+        {
+          "question": "What is the difference between var, let, and const in JavaScript?",
+          "answer": "Var is function scoped, let is block scoped, and const is block scoped and cannot be reassigned.",
+          "explanation": "Var is used for function-scoped variables, let is used for block-scoped variables, and const is used for block-scoped variables that cannot be reassigned.",
+          "difficulty": "Medium"
+        },
+        {
+          "question": "What is the purpose of the spread operator in JavaScript?",
+          "answer": "The spread operator is used to spread the elements of an array or object into a new array or object.",
+          "explanation": "The spread operator is used to spread the elements of an array or object into a new array or object.",
+          "difficulty": "Medium"
+        },
+        {
+          "question": "What is the difference between a class and a struct in Java?",
+          "answer": "A class is a reference type, while a struct is a value type.",
+          "explanation": "A class is a reference type, while a struct is a value type.",
+          "difficulty": "Medium"
+        },
+        {
+          "question": "What is the purpose of the 'this' keyword in JavaScript?",
+          "answer": "The 'this' keyword refers to the current object.",
+          "explanation": "The 'this' keyword refers to the current object.",
+          "difficulty": "Medium"
+        },
+        {
+          "question": "How do you handle errors in React?",
+          "answer": "You can handle errors in React using try-catch blocks or error boundaries.",
+          "explanation": "You can handle errors in React using try-catch blocks or error boundaries.",
+          "difficulty": "Medium"
+        },
+        {
+          "question": "What is the purpose of the 'super' keyword in a subclass in Java?",
+          "answer": "The 'super' keyword is used to call the constructor of the superclass.",
+          "explanation": "The 'super' keyword is used to call the constructor of the superclass.",
+          "difficulty": "Medium"
+        }
+      ],
+      "behavioral": [
+        {
+          "question": "Can you describe a situation where you had to debug a difficult issue in your code?",
+          "answer": "I once had to debug a difficult issue in my code where a function was not being called correctly.",
+          "explanation": "I used a debugger to step through the code and identify the issue, and then I made the necessary changes to fix the issue.",
+          "difficulty": ""
+        },
+        {
+          "question": "Can you describe a situation where you had to work with a difficult team member?",
+          "answer": "I once had to work with a difficult team member who had a different work style than me.",
+          "explanation": "I communicated with the team member to understand their needs and work style, and then I adapted my work style to meet their needs.",
+          "difficulty": ""
+        },
+        {
+          "question": "Can you describe a situation where you had to learn a new technology quickly?",
+          "answer": "I once had to learn a new technology quickly for a project deadline.",
+          "explanation": "I used online resources and documentation to learn the technology, and then I practiced using it to become proficient.",
+          "difficulty": ""
+        }
+      ],
+      "coding": [
+        {
+          "problem": "Write a function that takes a string as input and returns the string with all vowels removed.",
+          "solution": "def remove_vowels(s): return ''.join([c for c in s if c.lower() not in 'aeiou'])"
+        },
+        {
+          "problem": "Write a function that takes a list of numbers as input and returns the sum of the squares of the numbers.",
+          "solution": "def sum_of_squares(nums): return sum([n**2 for n in nums])"
+        },
+        {
+          "problem": "Write a function that takes a string as input and returns the string with all duplicate characters removed.",
+          "solution": "def remove_duplicates(s): return ''.join([c for i, c in enumerate(s) if s.index(c) == i])"
+        }
+      ],
+      "system_design": [
+        {
+          "question": "Design a system to handle user authentication and authorization.",
+          "answer": "You can use a database to store user credentials and permissions, and then use a authentication service to verify user credentials and authorize access to resources.",
+          "explanation": "You can use a database to store user credentials and permissions, and then use a authentication service to verify user credentials and authorize access to resources.",
+          "difficulty": ""
+        },
+        {
+          "question": "Design a system to handle payment processing.",
+          "answer": "You can use a payment gateway to process payments, and then use a database to store payment information and track transactions.",
+          "explanation": "You can use a payment gateway to process payments, and then use a database to store payment information and track transactions.",
+          "difficulty": ""
+        },
+        {
+          "question": "Design a system to handle file storage and retrieval.",
+          "answer": "You can use a cloud storage service to store files, and then use a database to track file metadata and permissions.",
+          "explanation": "You can use a cloud storage service to store files, and then use a database to track file metadata and permissions.",
+          "difficulty": ""
+        }
+      ]
+    }
+  },
+  {
+    "time": "2026-02-06 01:27",
+    "data": {
+      "technical": [
+        {
+          "question": "What is the difference between var, let, and const in JavaScript?",
+          "answer": "var is function-scoped, let and const are block-scoped. const is immutable.",
+          "explanation": "var is used for function-scoped variables, while let and const are used for block-scoped variables. const is used to declare immutable variables.",
+          "difficulty": "Medium"
+        },
+        {
+          "question": "How do you handle errors in a React application?",
+          "answer": "Using try-catch blocks, error boundaries, and error handling libraries like React Error Boundaries.",
+          "explanation": "Try-catch blocks can be used to catch and handle errors in a React application. Error boundaries can also be used to catch and display errors in a component. Libraries like React Error Boundaries can also be used to handle errors.",
+          "difficulty": "Medium"
+        },
+        {
+          "question": "What is the difference between == and === in JavaScript?",
+          "answer": "== performs loose equality check, while === performs strict equality check.",
+          "explanation": "The == operator performs a loose equality check, which means it checks if the values of the operands are equal, regardless of their data types. The === operator performs a strict equality check, which means it checks if the values and data types of the operands are equal.",
+          "difficulty": "Medium"
+        },
+        {
+          "question": "How do you optimize the performance of a React application?",
+          "answer": "By using React.memo, memoization, and optimizing the use of hooks.",
+          "explanation": "React.memo can be used to memoize components and prevent unnecessary re-renders. Memoization can also be used to cache the results of expensive function calls. Optimizing the use of hooks can also help to improve the performance of a React application.",
+          "difficulty": "Medium"
+        },
+        {
+          "question": "What is the difference between a class component and a functional component in React?",
+          "answer": "Class components have lifecycle methods, while functional components do not.",
+          "explanation": "Class components have lifecycle methods like componentDidMount, componentDidUpdate, and componentWillUnmount, which can be used to perform actions at different points in the component's lifecycle. Functional components, on the other hand, do not have lifecycle methods.",
+          "difficulty": "Medium"
+        },
+        {
+          "question": "How do you handle state changes in a React application?",
+          "answer": "Using the setState method, and by using the useState hook.",
+          "explanation": "The setState method can be used to update the state of a component. The useState hook can also be used to manage state in functional components.",
+          "difficulty": "Medium"
+        }
+      ],
+      "behavioral": [
+        {
+          "question": "Can you describe a situation where you had to troubleshoot a difficult technical issue?",
+          "answer": "I once had to troubleshoot a difficult technical issue where a React application was not rendering correctly. I used the browser's developer tools to identify the issue, and then used the React DevTools to debug the application.",
+          "explanation": "",
+          "difficulty": ""
+        },
+        {
+          "question": "Can you describe a situation where you had to work with a team to deliver a project?",
+          "answer": "I once had to work with a team to deliver a project where we were building a React application. We used Agile methodologies to manage the project, and I worked closely with the team to ensure that the project was delivered on time and within budget.",
+          "explanation": "",
+          "difficulty": ""
+        },
+        {
+          "question": "Can you describe a situation where you had to learn a new technology or skill?",
+          "answer": "I once had to learn a new technology called GraphQL. I used online resources and documentation to learn the technology, and then built a small project to practice what I had learned.",
+          "explanation": "",
+          "difficulty": ""
+        },
+        {
+          "question": "Can you describe a situation where you had to communicate technical information to a non-technical person?",
+          "answer": "I once had to communicate technical information to a non-technical person about a React application. I used simple language and avoided technical jargon to explain the information.",
+          "explanation": "",
+          "difficulty": ""
+        },
+        {
+          "question": "Can you describe a situation where you had to prioritize tasks and manage your time effectively?",
+          "answer": "I once had to prioritize tasks and manage my time effectively when working on a project where there were multiple deadlines to meet. I used a task list and a calendar to prioritize tasks and manage my time effectively.",
+          "explanation": "",
+          "difficulty": ""
+        },
+        {
+          "question": "Can you describe a situation where you had to work with a difficult team member?",
+          "answer": "I once had to work with a difficult team member who had a different work style than me. I used active listening and empathy to understand the team member's perspective, and then found ways to work together effectively.",
+          "explanation": "",
+          "difficulty": ""
+        }
+      ],
+      "coding": [
+        {
+          "problem": "Write a function that takes a string as input and returns the string with all vowels removed.",
+          "solution": "def remove_vowels(s):\n  vowels = 'aeiou'\n  return ''.join([c for c in s if c.lower() not in vowels])"
+        },
+        {
+          "problem": "Write a function that takes a list of numbers as input and returns the sum of the numbers.",
+          "solution": "def sum_numbers(numbers):\n  return sum(numbers)"
+        },
+        {
+          "problem": "Write a function that takes a string as input and returns the string with all occurrences of a given substring replaced with another substring.",
+          "solution": "def replace_substring(s, old, new):\n  return s.replace(old, new)"
+        },
+        {
+          "problem": "Write a function that takes a list of strings as input and returns the list with all strings sorted in alphabetical order.",
+          "solution": "def sort_strings(strings):\n  return sorted(strings)"
+        },
+        {
+          "problem": "Write a function that takes a dictionary as input and returns the dictionary with all values doubled.",
+          "solution": "def double_values(d):\n  return {k: v * 2 for k, v in d.items()}"
+        },
+        {
+          "problem": "Write a function that takes a list of numbers as input and returns the list with all numbers greater than a given number removed.",
+          "solution": "def remove_numbers(numbers, n):\n  return [x for x in numbers if x <= n]"
+        }
+      ],
+      "system_design": [
+        {
+          "question": "Design a system for a social media platform that allows users to follow other users and view their posts.",
+          "answer": "The system would consist of a user database, a post database, and a follow database. The user database would store information about each user, the post database would store information about each post, and the follow database would store information about which users are following which other users.",
+          "explanation": "",
+          "difficulty": ""
+        },
+        {
+          "question": "Design a system for a payment gateway that allows users to make payments online.",
+          "answer": "The system would consist of a payment database, a user database, and a payment processor. The payment database would store information about each payment, the user database would store information about each user, and the payment processor would handle the actual payment processing.",
+          "explanation": "",
+          "difficulty": ""
+        },
+        {
+          "question": "Design a system for a recommendation engine that recommends products to users based on their past purchases.",
+          "answer": "The system would consist of a user database, a product database, and a recommendation algorithm. The user database would store information about each user, the product database would store information about each product, and the recommendation algorithm would generate recommendations based on the user's past purchases.",
+          "explanation": "",
+          "difficulty": ""
+        },
+        {
+          "question": "Design a system for a chat application that allows users to send messages to each other.",
+          "answer": "The system would consist of a user database, a message database, and a message processor. The user database would store information about each user, the message database would store information about each message, and the message processor would handle the actual message sending and receiving.",
+          "explanation": "",
+          "difficulty": ""
+        },
+        {
+          "question": "Design a system for a file sharing platform that allows users to upload and download files.",
+          "answer": "The system would consist of a user database, a file database, and a file processor. The user database would store information about each user, the file database would store information about each file, and the file processor would handle the actual file uploading and downloading.",
+          "explanation": "",
+          "difficulty": ""
+        },
+        {
+          "question": "Design a system for a booking platform that allows users to book flights, hotels, and cars.",
+          "answer": "The system would consist of a user database, a booking database, and a booking processor. The user database would store information about each user, the booking database would store information about each booking, and the booking processor would handle the actual booking processing.",
+          "explanation": "",
+          "difficulty": ""
+        }
+      ]
+    }
+  },
+  {
+    "time": "2026-02-06 01:32",
+    "data": {
+      "technical": [
+        {
+          "type": "mcq",
+          "question": "What is the primary purpose of the React Context API?",
+          "options": [
+            "To manage state in a React application",
+            "To handle side effects in a React application",
+            "To provide a way to share data between components without passing props down manually",
+            "To optimize the performance of a React application"
+          ],
+          "answer": "3",
+          "explanation": "The React Context API is used to share data between components without passing props down manually. It provides a way to manage global state and props in a React application.",
+          "difficulty": "Medium"
+        },
+        {
+          "type": "mcq",
+          "question": "What is the difference between a class component and a functional component in React?",
+          "options": [
+            "Class components are more efficient than functional components",
+            "Functional components are more efficient than class components",
+            "Class components have access to the component's lifecycle methods, while functional components do not",
+            "Functional components are more flexible than class components"
+          ],
+          "answer": "3",
+          "explanation": "Class components have access to the component's lifecycle methods, such as componentDidMount and componentWillUnmount, while functional components do not. This makes class components more suitable for complex components that require lifecycle methods.",
+          "difficulty": "Medium"
+        },
+        {
+          "type": "mcq",
+          "question": "What is the purpose of the Java Virtual Machine (JVM) in the Java ecosystem?",
+          "options": [
+            "To provide a platform-independent way to run Java code",
+            "To optimize the performance of Java applications",
+            "To manage memory allocation in Java applications",
+            "To handle security threats in Java applications"
+          ],
+          "answer": "1",
+          "explanation": "The JVM provides a platform-independent way to run Java code, allowing Java applications to run on any platform that has a JVM installed. This makes Java a platform-independent language.",
+          "difficulty": "Medium"
+        },
+        {
+          "type": "mcq",
+          "question": "What is the difference between a static method and an instance method in a class?",
+          "options": [
+            "Static methods belong to the class, while instance methods belong to an instance of the class",
+            "Instance methods belong to the class, while static methods belong to an instance of the class",
+            "Static methods are more efficient than instance methods",
+            "Instance methods are more flexible than static methods"
+          ],
+          "answer": "1",
+          "explanation": "Static methods belong to the class, while instance methods belong to an instance of the class. Static methods are called without creating an instance of the class, while instance methods are called on an instance of the class.",
+          "difficulty": "Medium"
+        },
+        {
+          "type": "mcq",
+          "question": "What is the purpose of the try-catch-finally block in exception handling?",
+          "options": [
+            "To handle exceptions that occur during the execution of a block of code",
+            "To optimize the performance of a block of code",
+            "To manage resources such as file handles and network connections",
+            "To handle errors that occur during the execution of a block of code"
+          ],
+          "answer": "3",
+          "explanation": "The try-catch-finally block is used to handle exceptions that occur during the execution of a block of code. The finally block is used to manage resources such as file handles and network connections.",
+          "difficulty": "Medium"
+        }
+      ],
+      "behavioral": [
+        {
+          "type": "mcq",
+          "question": "What would you do if you were working on a project and encountered a bug that you couldn't fix?",
+          "options": [
+            "I would try to fix the bug myself, even if it takes a long time",
+            "I would ask for help from a colleague or mentor",
+            "I would report the bug to the project manager and wait for instructions",
+            "I would try to work around the bug instead of fixing it"
+          ],
+          "answer": "2",
+          "explanation": "If you're stuck on a bug, it's best to ask for help from a colleague or mentor. This shows that you're willing to learn and collaborate with others to solve the problem.",
+          "difficulty": "Medium"
+        },
+        {
+          "type": "mcq",
+          "question": "How would you handle a situation where you're working on a team project and one of your team members is not pulling their weight?",
+          "options": [
+            "I would confront the team member directly and tell them to shape up",
+            "I would talk to the team member and try to understand the reason for their lack of contribution",
+            "I would report the issue to the project manager and let them handle it",
+            "I would try to take on more work to compensate for the team member's lack of contribution"
+          ],
+          "answer": "2",
+          "explanation": "If a team member is not pulling their weight, it's best to talk to them and try to understand the reason for their lack of contribution. This shows that you're willing to communicate and work together to solve the problem.",
+          "difficulty": "Medium"
+        },
+        {
+          "type": "mcq",
+          "question": "What would you do if you were given a new task with a tight deadline and you're not sure how to do it?",
+          "options": [
+            "I would try to figure it out on my own, even if it takes a long time",
+            "I would ask for help from a colleague or mentor",
+            "I would report the task to the project manager and ask for an extension",
+            "I would try to delegate the task to someone else"
+          ],
+          "answer": "2",
+          "explanation": "If you're unsure about how to complete a task, it's best to ask for help from a colleague or mentor. This shows that you're willing to learn and collaborate with others to solve the problem.",
+          "difficulty": "Medium"
+        },
+        {
+          "type": "mcq",
+          "question": "How would you handle a situation where you're working on a project and you realize that the requirements have changed?",
+          "options": [
+            "I would try to adapt the project to the new requirements, even if it's difficult",
+            "I would report the change to the project manager and ask for instructions",
+            "I would try to convince the stakeholders to go back to the original requirements",
+            "I would try to ignore the change and continue with the original requirements"
+          ],
+          "answer": "1",
+          "explanation": "If the requirements have changed, it's best to adapt the project to the new requirements. This shows that you're flexible and willing to adjust to changing circumstances.",
+          "difficulty": "Medium"
+        },
+        {
+          "type": "mcq",
+          "question": "What would you do if you were working on a project and you realized that you had made a mistake?",
+          "options": [
+            "I would try to cover up the mistake and hope no one notices",
+            "I would report the mistake to the project manager and ask for help to fix it",
+            "I would try to fix the mistake myself, even if it takes a long time",
+            "I would try to blame someone else for the mistake"
+          ],
+          "answer": "2",
+          "explanation": "If you've made a mistake, it's best to report it to the project manager and ask for help to fix it. This shows that you're willing to take responsibility and learn from your mistakes.",
+          "difficulty": "Medium"
+        }
+      ],
+      "coding": [
+        {
+          "problem": "Write a function that takes a list of integers as input and returns the sum of all the even numbers in the list. If the list is empty, return 0.",
+          "solution": "def sum_even_numbers(numbers):\n  return sum(num for num in numbers if num % 2 == 0)"
+        },
+        {
+          "problem": "Write a function that takes a string as input and returns the string with all vowels removed. If the input string is empty, return an empty string.",
+          "solution": "def remove_vowels(s):\n  return ''.join(c for c in s if c.lower() not in 'aeiou')"
+        },
+        {
+          "problem": "Write a function that takes a list of strings as input and returns a dictionary where the keys are the unique strings in the list and the values are the counts of each string. If the input list is empty, return an empty dictionary.",
+          "solution": "def count_strings(strings):\n  return {s: strings.count(s) for s in set(strings)}"
+        },
+        {
+          "problem": "Write a function that takes a list of integers as input and returns the maximum value in the list. If the list is empty, return None.",
+          "solution": "def max_value(numbers):\n  return max(numbers) if numbers else None"
+        },
+        {
+          "problem": "Write a function that takes a string as input and returns the string with all occurrences of a given substring replaced with a given replacement string. If the input string is empty, return an empty string.",
+          "solution": "def replace_substring(s, old, new):\n  return s.replace(old, new)"
+        }
+      ],
+      "system_design": [
+        {
+          "type": "mcq",
+          "question": "What is the primary purpose of the Model-View-Controller (MVC) architecture?",
+          "options": [
+            "To separate the presentation layer from the business logic layer",
+            "To separate the business logic layer from the data access layer",
+            "To separate the presentation layer from the data access layer",
+            "To combine the presentation layer, business logic layer, and data access layer into a single layer"
+          ],
+          "answer": "1",
+          "explanation": "The MVC architecture is used to separate the presentation layer from the business logic layer. This makes it easier to maintain and update the application.",
+          "difficulty": "Medium"
+        },
+        {
+          "type": "mcq",
+          "question": "What is the difference between a monolithic architecture and a microservices architecture?",
+          "options": [
+            "A monolithic architecture is more scalable than a microservices architecture",
+            "A microservices architecture is more scalable than a monolithic architecture",
+            "A monolithic architecture is more maintainable than a microservices architecture",
+            "A microservices architecture is more maintainable than a monolithic architecture"
+          ],
+          "answer": "2",
+          "explanation": "A microservices architecture is more scalable than a monolithic architecture. This is because each microservice can be scaled independently, making it easier to handle large amounts of traffic.",
+          "difficulty": "Medium"
+        },
+        {
+          "type": "mcq",
+          "question": "What is the purpose of the Service-Oriented Architecture (SOA)?",
+          "options": [
+            "To separate the presentation layer from the business logic layer",
+            "To separate the business logic layer from the data access layer",
+            "To provide a way to expose business capabilities as services",
+            "To combine the presentation layer, business logic layer, and data access layer into a single layer"
+          ],
+          "answer": "3",
+          "explanation": "The SOA is used to provide a way to expose business capabilities as services. This makes it easier to integrate different systems and applications.",
+          "difficulty": "Medium"
+        },
+        {
+          "type": "mcq",
+          "question": "What is the difference between a RESTful API and a GraphQL API?",
+          "options": [
+            "A RESTful API is more scalable than a GraphQL API",
+            "A GraphQL API is more scalable than a RESTful API",
+            "A RESTful API is more maintainable than a GraphQL API",
+            "A GraphQL API is more maintainable than a RESTful API"
+          ],
+          "answer": "2",
+          "explanation": "A GraphQL API is more scalable than a RESTful API. This is because GraphQL allows clients to request only the data they need, making it more efficient and scalable.",
+          "difficulty": "Medium"
+        },
+        {
+          "type": "mcq",
+          "question": "What is the purpose of the Event-Driven Architecture (EDA)?",
+          "options": [
+            "To separate the presentation layer from the business logic layer",
+            "To separate the business logic layer from the data access layer",
+            "To provide a way to handle events and notifications between different systems and applications",
+            "To combine the presentation layer, business logic layer, and data access layer into a single layer"
+          ],
+          "answer": "3",
+          "explanation": "The EDA is used to provide a way to handle events and notifications between different systems and applications. This makes it easier to integrate different systems and applications.",
+          "difficulty": "Medium"
+        }
+      ]
+    }
+  },
+  {
+    "time": "2026-02-06 01:37",
+    "data": {
+      "technical": [
+        {
+          "type": "mcq",
+          "question": "What is the primary purpose of the React Context API?",
+          "options": [
+            "To manage state in a React application",
+            "To handle events in a React application",
+            "To share data between components in a React application",
+            "To optimize rendering in a React application"
+          ],
+          "answer": "To share data between components in a React application",
+          "explanation": "The React Context API is used to share data between components in a React application, allowing them to access and update the same data without having to pass props down manually.",
+          "difficulty": "Medium"
+        },
+        {
+          "type": "mcq",
+          "question": "What is the difference between a 'let' and a 'const' variable in JavaScript?",
+          "options": [
+            "A 'let' variable can be reassigned, while a 'const' variable cannot",
+            "A 'const' variable can be reassigned, while a 'let' variable cannot",
+            "A 'let' variable is block-scoped, while a 'const' variable is function-scoped",
+            "A 'const' variable is block-scoped, while a 'let' variable is function-scoped"
+          ],
+          "answer": "A 'let' variable can be reassigned, while a 'const' variable cannot",
+          "explanation": "In JavaScript, 'let' variables are block-scoped and can be reassigned, while 'const' variables are also block-scoped but cannot be reassigned.",
+          "difficulty": "Medium"
+        },
+        {
+          "type": "mcq",
+          "question": "What is the purpose of the 'useCallback' hook in React?",
+          "options": [
+            "To memoize a function so that it's not recreated on every render",
+            "To prevent a component from re-rendering",
+            "To handle events in a React application",
+            "To optimize rendering in a React application"
+          ],
+          "answer": "To memoize a function so that it's not recreated on every render",
+          "explanation": "The 'useCallback' hook in React is used to memoize a function so that it's not recreated on every render, which can improve performance by preventing unnecessary re-renders.",
+          "difficulty": "Medium"
+        }
+      ],
+      "behavioral": [
+        {
+          "type": "mcq",
+          "question": "What would you do if you encountered a bug in your code that you couldn't reproduce?",
+          "options": [
+            "Try to debug the code manually",
+            "Ask a colleague for help",
+            "Write a test case to reproduce the bug",
+            "Use a debugging tool to step through the code"
+          ],
+          "answer": "Write a test case to reproduce the bug",
+          "explanation": "When encountering a bug that can't be reproduced, writing a test case to reproduce the bug is a good approach, as it allows you to isolate the issue and identify the root cause.",
+          "difficulty": "Medium"
+        },
+        {
+          "type": "mcq",
+          "question": "How would you handle a situation where a stakeholder is requesting a feature that you believe will negatively impact the user experience?",
+          "options": [
+            "Implement the feature as requested",
+            "Explain your concerns to the stakeholder and try to find a compromise",
+            "Refuse to implement the feature",
+            "Suggest an alternative solution"
+          ],
+          "answer": "Explain your concerns to the stakeholder and try to find a compromise",
+          "explanation": "When faced with a situation where a stakeholder is requesting a feature that may negatively impact the user experience, it's essential to explain your concerns and try to find a compromise that meets both the stakeholder's needs and the user's needs.",
+          "difficulty": "Medium"
+        },
+        {
+          "type": "mcq",
+          "question": "What would you do if you were working on a team project and a team member was not pulling their weight?",
+          "options": [
+            "Confront the team member directly",
+            "Talk to the team lead about the issue",
+            "Try to take on more work to compensate",
+            "Document the issue and report it to the team lead"
+          ],
+          "answer": "Talk to the team lead about the issue",
+          "explanation": "When working on a team project and a team member is not pulling their weight, it's essential to talk to the team lead about the issue, as they can help mediate the situation and find a solution.",
+          "difficulty": "Medium"
+        }
+      ],
+      "coding": [
+        {
+          "problem": "Write a function that takes a string as input and returns the string with all vowels removed. The function should handle both lowercase and uppercase vowels.",
+          "solution": "def remove_vowels(input_string):\n  vowels = 'aeiouAEIOU'\n  return ''.join([char for char in input_string if char not in vowels])"
+        },
+        {
+          "problem": "Write a function that takes a list of integers as input and returns the sum of all the even numbers in the list. The function should handle empty lists and lists with non-integer values.",
+          "solution": "def sum_even_numbers(numbers):\n  return sum([num for num in numbers if isinstance(num, int) and num % 2 == 0])"
+        }
+      ],
+      "system_design": [
+        {
+          "type": "mcq",
+          "question": "What is the primary advantage of using a microservices architecture?",
+          "options": [
+            "It allows for easier horizontal scaling",
+            "It improves communication between teams",
+            "It enables faster deployment of new features",
+            "It reduces the complexity of the system"
+          ],
+          "answer": "It allows for easier horizontal scaling",
+          "explanation": "The primary advantage of using a microservices architecture is that it allows for easier horizontal scaling, as each microservice can be scaled independently without affecting the entire system.",
+          "difficulty": "Medium"
+        },
+        {
+          "type": "mcq",
+          "question": "What is the primary disadvantage of using a monolithic architecture?",
+          "options": [
+            "It is difficult to scale",
+            "It is difficult to maintain",
+            "It is difficult to deploy new features",
+            "It is difficult to communicate between teams"
+          ],
+          "answer": "It is difficult to scale",
+          "explanation": "The primary disadvantage of using a monolithic architecture is that it is difficult to scale, as the entire system must be scaled together, which can lead to performance issues and decreased system reliability.",
+          "difficulty": "Medium"
+        },
+        {
+          "type": "mcq",
+          "question": "What is the primary advantage of using a caching layer in a system?",
+          "options": [
+            "It improves system performance",
+            "It reduces system complexity",
+            "It improves system reliability",
+            "It reduces system costs"
+          ],
+          "answer": "It improves system performance",
+          "explanation": "The primary advantage of using a caching layer in a system is that it improves system performance, as it reduces the number of requests made to the underlying system, which can lead to faster response times and improved user experience.",
+          "difficulty": "Medium"
+        }
+      ]
+    }
+  },
+  {
+    "time": "2026-02-06 02:37",
+    "data": {
+      "technical": [
+        {
+          "type": "mcq",
+          "question": "What is the primary difference between a class and a struct in object-oriented programming?",
+          "options": [
+            "A class is a collection of methods and a struct is a collection of variables.",
+            "A class is a collection of variables and a struct is a collection of methods.",
+            "A class is used for inheritance and a struct is used for composition.",
+            "A class is used for composition and a struct is used for inheritance."
+          ],
+          "answer": "A class is a collection of methods and a struct is a collection of variables.",
+          "explanation": "In object-oriented programming, a class is a blueprint for creating objects that define both data and behavior. A struct, on the other hand, is a collection of variables that can be used to create a lightweight object.",
+          "difficulty": ""
+        }
+      ],
+      "behavioral": [
+        {
+          "type": "mcq",
+          "question": "You are working on a team project and a team member has made a change that breaks the build. What would you do?",
+          "options": [
+            "You would revert the change and tell the team member to redo their work.",
+            "You would discuss the change with the team member and try to find a solution.",
+            "You would ignore the change and move on with the project.",
+            "You would report the issue to the project manager."
+          ],
+          "answer": "You would discuss the change with the team member and try to find a solution.",
+          "explanation": "As a team member, it's essential to communicate effectively and work collaboratively to resolve issues. Discussing the change with the team member and trying to find a solution shows that you value teamwork and are committed to delivering a high-quality product.",
+          "difficulty": ""
+        }
+      ],
+      "coding": [
+        {
+          "problem": "Write a function in Python that takes a list of integers as input and returns the sum of all even numbers in the list. If the list is empty, the function should return 0.",
+          "solution": "def sum_even_numbers(numbers):\n  return sum(num for num in numbers if num % 2 == 0)"
+        }
+      ],
+      "system_design": [
+        {
+          "type": "mcq",
+          "question": "Design a system for a social media platform that allows users to follow other users and view their posts.",
+          "options": [
+            "Use a relational database to store user information and post data.",
+            "Use a graph database to store user relationships and post data.",
+            "Use a NoSQL database to store user information and post data.",
+            "Use a message queue to handle follow requests and post updates."
+          ],
+          "answer": "Use a graph database to store user relationships and post data.",
+          "explanation": "A graph database is well-suited for social media platforms because it can efficiently store and query complex relationships between users. This allows for fast and efficient retrieval of user posts and relationships.",
+          "difficulty": ""
+        }
+      ]
+    }
+  },
+  {
+    "time": "2026-02-06 02:38",
+    "data": {
+      "technical": [
+        {
+          "type": "mcq",
+          "question": "What is the difference between null and undefined in JavaScript?",
+          "options": [
+            "null is a value that represents the intentional absence of any object value, while undefined represents an uninitialized variable.",
+            "null is an object that represents the absence of any object value, while undefined is a primitive value.",
+            "null is a primitive value that represents the absence of any object value, while undefined is an object.",
+            "null and undefined are the same and represent the absence of any object value."
+          ],
+          "answer": "null is a value that represents the intentional absence of any object value, while undefined represents an uninitialized variable.",
+          "explanation": "null is a value that represents the intentional absence of any object value, while undefined represents an uninitialized variable.",
+          "difficulty": ""
+        },
+        {
+          "type": "mcq",
+          "question": "What is the purpose of the 'let' keyword in JavaScript?",
+          "options": [
+            "It is used to declare a variable that can be reassigned.",
+            "It is used to declare a constant variable.",
+            "It is used to declare a variable that is block-scoped.",
+            "It is used to declare a variable that is function-scoped."
+          ],
+          "answer": "It is used to declare a variable that is block-scoped.",
+          "explanation": "It is used to declare a variable that is block-scoped.",
+          "difficulty": ""
+        },
+        {
+          "type": "mcq",
+          "question": "What is the difference between '==' and '===' in JavaScript?",
+          "options": [
+            "'==' checks for value equality, while '===' checks for both value and type equality.",
+            "'==' checks for both value and type equality, while '===' checks for value equality.",
+            "'==' checks for type equality, while '===' checks for value equality.",
+            "'==' and '===' are the same and check for both value and type equality."
+          ],
+          "answer": "'==' checks for value equality, while '===' checks for both value and type equality.",
+          "explanation": "'==' checks for value equality, while '===' checks for both value and type equality.",
+          "difficulty": ""
+        },
+        {
+          "type": "mcq",
+          "question": "What is the purpose of the 'this' keyword in JavaScript?",
+          "options": [
+            "It is used to refer to the current object.",
+            "It is used to refer to the global object.",
+            "It is used to refer to the parent object.",
+            "It is used to refer to the child object."
+          ],
+          "answer": "It is used to refer to the current object.",
+          "explanation": "It is used to refer to the current object.",
+          "difficulty": ""
+        },
+        {
+          "type": "mcq",
+          "question": "What is the difference between a function expression and a function declaration in JavaScript?",
+          "options": [
+            "A function expression is a function that is assigned to a variable, while a function declaration is a function that is not assigned to a variable.",
+            "A function expression is a function that is not assigned to a variable, while a function declaration is a function that is assigned to a variable.",
+            "A function expression is a function that is hoisted, while a function declaration is a function that is not hoisted.",
+            "A function expression is a function that is not hoisted, while a function declaration is a function that is hoisted."
+          ],
+          "answer": "A function expression is a function that is assigned to a variable, while a function declaration is a function that is not assigned to a variable.",
+          "explanation": "A function expression is a function that is assigned to a variable, while a function declaration is a function that is not assigned to a variable.",
+          "difficulty": ""
+        }
+      ],
+      "behavioral": [
+        {
+          "type": "mcq",
+          "question": "Can you describe a situation where you had to troubleshoot a difficult bug?",
+          "options": [
+            "I used a debugger to step through the code and identify the issue.",
+            "I used a print statement to log the values of variables and identify the issue.",
+            "I used a combination of both a debugger and print statements to identify the issue.",
+            "I was unable to troubleshoot the issue."
+          ],
+          "answer": "I used a combination of both a debugger and print statements to identify the issue.",
+          "explanation": "I used a combination of both a debugger and print statements to identify the issue.",
+          "difficulty": ""
+        },
+        {
+          "type": "mcq",
+          "question": "Can you describe a situation where you had to work with a team to complete a project?",
+          "options": [
+            "I was the lead developer and was responsible for assigning tasks to team members.",
+            "I worked closely with the team to ensure that everyone was on the same page.",
+            "I was responsible for completing my own tasks and did not interact with the team.",
+            "I was not part of a team and worked on the project alone."
+          ],
+          "answer": "I worked closely with the team to ensure that everyone was on the same page.",
+          "explanation": "I worked closely with the team to ensure that everyone was on the same page.",
+          "difficulty": ""
+        },
+        {
+          "type": "mcq",
+          "question": "Can you describe a situation where you had to communicate technical information to a non-technical person?",
+          "options": [
+            "I used technical jargon and explained the concept in detail.",
+            "I used simple language and avoided technical jargon.",
+            "I used a combination of both technical jargon and simple language.",
+            "I was unable to communicate the information."
+          ],
+          "answer": "I used simple language and avoided technical jargon.",
+          "explanation": "I used simple language and avoided technical jargon.",
+          "difficulty": ""
+        },
+        {
+          "type": "mcq",
+          "question": "Can you describe a situation where you had to adapt to a new technology or programming language?",
+          "options": [
+            "I was able to pick it up quickly and was proficient within a few days.",
+            "I struggled at first but eventually became proficient.",
+            "I was unable to adapt and required additional training.",
+            "I was not interested in learning the new technology."
+          ],
+          "answer": "I was able to pick it up quickly and was proficient within a few days.",
+          "explanation": "I was able to pick it up quickly and was proficient within a few days.",
+          "difficulty": ""
+        },
+        {
+          "type": "mcq",
+          "question": "Can you describe a situation where you had to prioritize tasks and manage your time effectively?",
+          "options": [
+            "I used a task list and prioritized tasks based on deadlines and importance.",
+            "I used a calendar to schedule tasks and manage my time.",
+            "I was unable to prioritize tasks and manage my time effectively.",
+            "I did not use any tools to manage my time."
+          ],
+          "answer": "I used a task list and prioritized tasks based on deadlines and importance.",
+          "explanation": "I used a task list and prioritized tasks based on deadlines and importance.",
+          "difficulty": ""
+        }
+      ],
+      "coding": [
+        {
+          "problem": "Write a function that takes a string as input and returns the string with all vowels removed.",
+          "solution": "def remove_vowels(s):\n  vowels = 'aeiouAEIOU'\n  return ''.join([c for c in s if c not in vowels])"
+        },
+        {
+          "problem": "Write a function that takes a list of integers as input and returns the sum of all the even numbers in the list.",
+          "solution": "def sum_even_numbers(numbers):\n  return sum([num for num in numbers if num % 2 == 0])"
+        },
+        {
+          "problem": "Write a function that takes a string as input and returns the string with all occurrences of a specified character removed.",
+          "solution": "def remove_char(s, c):\n  return s.replace(c, '')"
+        },
+        {
+          "problem": "Write a function that takes a list of strings as input and returns a new list with all the strings in uppercase.",
+          "solution": "def to_uppercase(strings):\n  return [s.upper() for s in strings]"
+        },
+        {
+          "problem": "Write a function that takes a dictionary as input and returns a new dictionary with all the values multiplied by 2.",
+          "solution": "def double_values(d):\n  return {k: v * 2 for k, v in d.items()}"
+        }
+      ],
+      "system_design": [
+        {
+          "type": "mcq",
+          "question": "Design a simple chat application that allows users to send messages to each other.",
+          "options": [
+            "Use a database to store all the messages and have the client-side application query the database for new messages.",
+            "Use a message queue to store all the messages and have the client-side application poll the queue for new messages.",
+            "Use a combination of both a database and a message queue to store and retrieve messages.",
+            "Use a cloud-based messaging service to handle all the message routing and storage."
+          ],
+          "answer": "Use a cloud-based messaging service to handle all the message routing and storage.",
+          "explanation": "Use a cloud-based messaging service to handle all the message routing and storage.",
+          "difficulty": ""
+        },
+        {
+          "type": "mcq",
+          "question": "Design a simple e-commerce application that allows users to browse and purchase products.",
+          "options": [
+            "Use a monolithic architecture with a single server handling all the requests.",
+            "Use a microservices architecture with each service handling a specific functionality.",
+            "Use a combination of both monolithic and microservices architecture.",
+            "Use a cloud-based e-commerce platform to handle all the product management and payment processing."
+          ],
+          "answer": "Use a cloud-based e-commerce platform to handle all the product management and payment processing.",
+          "explanation": "Use a cloud-based e-commerce platform to handle all the product management and payment processing.",
+          "difficulty": ""
+        },
+        {
+          "type": "mcq",
+          "question": "Design a simple social media application that allows users to post updates and follow other users.",
+          "options": [
+            "Use a relational database to store all the user data and post data.",
+            "Use a NoSQL database to store all the user data and post data.",
+            "Use a combination of both relational and NoSQL databases.",
+            "Use a cloud-based social media platform to handle all the user authentication and post routing."
+          ],
+          "answer": "Use a cloud-based social media platform to handle all the user authentication and post routing.",
+          "explanation": "Use a cloud-based social media platform to handle all the user authentication and post routing.",
+          "difficulty": ""
+        },
+        {
+          "type": "mcq",
+          "question": "Design a simple file sharing application that allows users to upload and download files.",
+          "options": [
+            "Use a centralized server to store all the files and have the client-side application query the server for file availability.",
+            "Use a decentralized network to store all the files and have the client-side application query the network for file availability.",
+            "Use a combination of both centralized and decentralized networks.",
+            "Use a cloud-based file sharing service to handle all the file storage and routing."
+          ],
+          "answer": "Use a cloud-based file sharing service to handle all the file storage and routing.",
+          "explanation": "Use a cloud-based file sharing service to handle all the file storage and routing.",
+          "difficulty": ""
+        },
+        {
+          "type": "mcq",
+          "question": "Design a simple real-time analytics application that displays metrics and graphs for a web application.",
+          "options": [
+            "Use a polling mechanism to query the server for new data and update the client-side application accordingly.",
+            "Use a push mechanism to send new data from the server to the client-side application.",
+            "Use a combination of both polling and push mechanisms.",
+            "Use a cloud-based analytics service to handle all the data collection and visualization."
+          ],
+          "answer": "Use a cloud-based analytics service to handle all the data collection and visualization.",
+          "explanation": "Use a cloud-based analytics service to handle all the data collection and visualization.",
+          "difficulty": ""
+        }
+      ]
+    }
+  },
+  {
+    "time": "2026-02-06 02:43",
+    "data": {
+      "technical": [
+        {
+          "question": "What is the difference between null and undefined in JavaScript?",
+          "answer": "null is a primitive value, while undefined is an object",
+          "explanation": "In JavaScript, null is a primitive value that represents the absence of any object value, while undefined is a primitive value that represents an uninitialized variable or an expression that has not been assigned a value.",
+          "difficulty": ""
+        }
+      ],
+      "behavioral": [
+        {
+          "question": "You are working on a team project and a team member has made a change to the code that breaks the functionality. How would you handle this situation?",
+          "answer": "You would discuss the changes with the team member and try to understand their intention before deciding on a course of action",
+          "explanation": "This approach shows that you value collaboration and communication within the team, and are willing to work together to find a solution.",
+          "difficulty": ""
+        }
+      ],
+      "coding": [
+        {
+          "problem": "Write a function in Python that takes a string as input and returns the string with all vowels removed. The function should be case-insensitive and should handle strings with non-ASCII characters.",
+          "solution": "def remove_vowels(s): return ''.join([c for c in s if c.lower() not in 'aeiou'])"
+        }
+      ],
+      "system_design": [
+        {
+          "question": "Design a system for a social media platform that allows users to follow other users and view their posts. The system should be able to handle a large number of users and posts, and should be scalable.",
+          "answer": "Use a graph database to store user relationships and post data, and use a message queue to handle requests",
+          "explanation": "A graph database is well-suited for storing user relationships and post data, as it can efficiently store and query complex relationships between users. A message queue can handle requests in a scalable and fault-tolerant manner, making it an ideal choice for a social media platform.",
+          "difficulty": ""
+        }
+      ]
+    }
+  },
+  {
+    "time": "2026-02-06 03:08",
+    "data": {
+      "technical": [
+        {
+          "type": "mcq",
+          "question": "What is the main purpose of the 'self' keyword in Python?",
+          "options": [
+            "To create a new instance of a class",
+            "To access class variables",
+            "To refer to the current instance of a class",
+            "To import a module"
+          ],
+          "answer": "",
+          "explanation": "The 'self' keyword is used to refer to the current instance of a class and is used to access variables and methods from the class.",
+          "difficulty": ""
+        }
+      ],
+      "behavioral": [
+        {
+          "type": "mcq",
+          "question": "What would you do if you were given a task that you had no experience with?",
+          "options": [
+            "Refuse to do it",
+            "Ask for more information about the task",
+            "Ask for help from a colleague",
+            "Research and learn about the task on your own"
+          ],
+          "answer": "",
+          "explanation": "As a frontend developer, it's essential to be proactive and take the initiative to learn new skills and adapt to new situations.",
+          "difficulty": ""
+        }
+      ],
+      "coding": [
+        {
+          "problem": "Write a function that takes a string as input and returns the string with all vowels removed.",
+          "solution": "def remove_vowels(s): return ''.join([c for c in s if c.lower() not in 'aeiou'])"
+        }
+      ],
+      "system_design": [
+        {
+          "type": "mcq",
+          "question": "What is the primary goal of load balancing in a web application?",
+          "options": [
+            "To increase the response time of the application",
+            "To distribute incoming traffic across multiple servers",
+            "To reduce the memory usage of the application",
+            "To improve the security of the application"
+          ],
+          "answer": "",
+          "explanation": "Load balancing is a technique used to distribute incoming traffic across multiple servers to improve the responsiveness and reliability of the application.",
+          "difficulty": ""
+        }
+      ]
+    }
+  },
+  {
+    "time": "2026-02-06 03:14",
+    "data": {
+      "technical": [
+        {
+          "type": "mcq",
+          "question": "What is the primary purpose of the 'self' parameter in Python?",
+          "options": [
+            "To refer to the current instance of the class",
+            "To refer to the parent class",
+            "To refer to the global namespace",
+            "To refer to the local namespace"
+          ],
+          "answer": "",
+          "explanation": "The 'self' parameter is used to refer to the current instance of the class and is a reference to the instance itself.",
+          "difficulty": ""
+        }
+      ],
+      "behavioral": [
+        {
+          "type": "mcq",
+          "question": "What is the most effective way to handle conflicts with a team member?",
+          "options": [
+            "Avoid the conflict altogether",
+            "Raise your voice to assert your point",
+            "Listen actively and try to find a compromise",
+            "Blame the team member for the conflict"
+          ],
+          "answer": "",
+          "explanation": "Listening actively and trying to find a compromise is the most effective way to handle conflicts with a team member.",
+          "difficulty": ""
+        }
+      ],
+      "coding": [
+        {
+          "problem": "Write a function that takes a string as input and returns the string with all vowels removed.",
+          "solution": "def remove_vowels(s): return ''.join([c for c in s if c.lower() not in 'aeiou'])"
+        }
+      ],
+      "system_design": [
+        {
+          "type": "mcq",
+          "question": "What is the primary advantage of using a load balancer in a web application?",
+          "options": [
+            "Improved security",
+            "Increased scalability",
+            "Reduced latency",
+            "Improved reliability"
+          ],
+          "answer": "",
+          "explanation": "A load balancer is used to distribute incoming traffic across multiple servers, improving the scalability of a web application.",
+          "difficulty": ""
+        }
+      ]
+    }
+  },
+  {
+    "time": "2026-02-06 03:15",
+    "data": {
+      "technical": [
+        {
+          "type": "mcq",
+          "question": "What is the primary use of JavaScript in frontend development?",
+          "options": [
+            "Server-side programming",
+            "Frontend development",
+            "Database management",
+            "Operating system management"
+          ],
+          "answer": "",
+          "explanation": "JavaScript is primarily used for client-side scripting in frontend development.",
+          "difficulty": ""
+        },
+        {
+          "type": "mcq",
+          "question": "Which of the following Python libraries is commonly used for frontend development?",
+          "options": [
+            "NumPy",
+            "Pandas",
+            "Flask",
+            "React"
+          ],
+          "answer": "",
+          "explanation": "React is a popular JavaScript library for building user interfaces.",
+          "difficulty": ""
+        },
+        {
+          "type": "mcq",
+          "question": "What is the purpose of the 'this' keyword in JavaScript?",
+          "options": [
+            "To access global variables",
+            "To access local variables",
+            "To refer to the current object",
+            "To refer to the parent object"
+          ],
+          "answer": "",
+          "explanation": "The 'this' keyword in JavaScript refers to the current object.",
+          "difficulty": ""
+        },
+        {
+          "type": "mcq",
+          "question": "What is the difference between 'let' and 'const' in JavaScript?",
+          "options": [
+            "Let is block scoped, const is function scoped",
+            "Let is function scoped, const is block scoped",
+            "Let is block scoped, const is block scoped",
+            "Let is function scoped, const is function scoped"
+          ],
+          "answer": "",
+          "explanation": "Let is block scoped, while const is block scoped and cannot be reassigned.",
+          "difficulty": ""
+        }
+      ],
+      "behavioral": [],
+      "coding": [
+        {
+          "problem": "Write a function to calculate the sum of all numbers in a given list.",
+          "solution": "def sum_numbers(numbers): return sum(numbers)"
+        }
+      ],
+      "system_design": []
+    }
+  },
+  {
+    "time": "2026-02-06 03:25",
+    "data": {
+      "technical": [
+        {
+          "type": "mcq",
+          "question": "What is the primary function of a frontend developer?",
+          "options": [
+            "Designing the backend of a website",
+            "Creating the user interface and user experience of a website",
+            "Developing mobile apps",
+            "Testing software"
+          ],
+          "answer": "",
+          "explanation": "A frontend developer is responsible for creating the visual aspects of a website, including the layout, colors, and overall user experience.",
+          "difficulty": ""
+        },
+        {
+          "type": "mcq",
+          "question": "What programming language is commonly used for frontend development?",
+          "options": [
+            "Java",
+            "Python",
+            "JavaScript",
+            "C++"
+          ],
+          "answer": "",
+          "explanation": "JavaScript is a popular language used for client-side scripting and is commonly used for frontend development.",
+          "difficulty": ""
+        },
+        {
+          "type": "mcq",
+          "question": "What is the purpose of the 'this' keyword in JavaScript?",
+          "options": [
+            "To create a new object",
+            "To access a variable from the global scope",
+            "To refer to the current object",
+            "To create a function"
+          ],
+          "answer": "",
+          "explanation": "The 'this' keyword in JavaScript is used to refer to the current object, allowing developers to access its properties and methods.",
+          "difficulty": ""
+        },
+        {
+          "type": "mcq",
+          "question": "What is the difference between 'null' and 'undefined' in JavaScript?",
+          "options": [
+            "Null is a primitive value, while undefined is an object",
+            "Undefined is a primitive value, while null is an object",
+            "Null and undefined are the same thing",
+            "Null is used to represent the absence of a value, while undefined is used to represent an uninitialized variable"
+          ],
+          "answer": "",
+          "explanation": "In JavaScript, 'null' is used to represent the absence of a value, while 'undefined' is used to represent an uninitialized variable.",
+          "difficulty": ""
+        }
+      ],
+      "behavioral": [],
+      "coding": [
+        {
+          "problem": "Write a function that takes a string as input and returns the string with all vowels removed.",
+          "solution": "def remove_vowels(s): return ''.join([c for c in s if c.lower() not in 'aeiou'])"
+        }
+      ],
+      "system_design": []
+    }
+  },
+  {
+    "time": "2026-02-06 03:30",
+    "data": {
+      "technical": [
+        {
+          "type": "mcq",
+          "question": "What is the primary purpose of a frontend developer?",
+          "options": [
+            "To handle backend database queries",
+            "To create user interfaces and user experiences",
+            "To manage network infrastructure",
+            "To develop mobile applications"
+          ],
+          "answer": "",
+          "explanation": "Frontend developers are responsible for creating the user interface and user experience of a website or application.",
+          "difficulty": ""
+        },
+        {
+          "type": "mcq",
+          "question": "Which of the following programming languages is commonly used for frontend development?",
+          "options": [
+            "Java",
+            "Python",
+            "JavaScript",
+            "C++"
+          ],
+          "answer": "",
+          "explanation": "JavaScript is a popular language for frontend development due to its ability to create interactive web pages.",
+          "difficulty": ""
+        },
+        {
+          "type": "mcq",
+          "question": "What is the term for a reusable piece of code that performs a specific task?",
+          "options": [
+            "Function",
+            "Class",
+            "Method",
+            "Module"
+          ],
+          "answer": "",
+          "explanation": "A module is a reusable piece of code that can be imported and used in other parts of a program.",
+          "difficulty": ""
+        },
+        {
+          "type": "mcq",
+          "question": "Which of the following is a popular frontend framework?",
+          "options": [
+            "React",
+            "Angular",
+            "Vue.js",
+            "All of the above"
+          ],
+          "answer": "",
+          "explanation": "React, Angular, and Vue.js are all popular frontend frameworks used for building user interfaces.",
+          "difficulty": ""
+        }
+      ],
+      "behavioral": [],
+      "coding": [
+        {
+          "problem": "Write a function that takes a string as input and returns the string with all vowels removed.",
+          "solution": "def remove_vowels(s): return ''.join([c for c in s if c.lower() not in 'aeiou'])"
+        }
+      ],
+      "system_design": []
+    }
+  },
+  {
+    "time": "2026-02-06 03:32",
+    "data": {
+      "technical": [
+        {
+          "type": "mcq",
+          "question": "What is the primary function of the Flask framework in Python?",
+          "options": [
+            "A. Data analysis",
+            "B. Web development",
+            "C. Machine learning",
+            "D. Scientific computing"
+          ],
+          "answer": "",
+          "explanation": "Flask is a micro web framework for Python that allows developers to build web applications quickly and efficiently.",
+          "difficulty": ""
+        },
+        {
+          "type": "mcq",
+          "question": "Which of the following data structures is best suited for storing and retrieving large amounts of data in Python?",
+          "options": [
+            "A. List",
+            "B. Dictionary",
+            "C. Set",
+            "D. Tuple"
+          ],
+          "answer": "",
+          "explanation": "Dictionaries are ideal for storing and retrieving large amounts of data in Python due to their efficient lookup times.",
+          "difficulty": ""
+        },
+        {
+          "type": "mcq",
+          "question": "What is the purpose of the 'self' parameter in Python classes?",
+          "options": [
+            "A. To pass variables to methods",
+            "B. To reference the current instance of the class",
+            "C. To import modules",
+            "D. To create new instances of the class"
+          ],
+          "answer": "",
+          "explanation": "The 'self' parameter is used to reference the current instance of the class and is a reference to the instance itself.",
+          "difficulty": ""
+        },
+        {
+          "type": "mcq",
+          "question": "Which of the following is a built-in Python function for sorting lists?",
+          "options": [
+            "A. sort()",
+            "B. sorted()",
+            "C. reverse()",
+            "D. max()"
+          ],
+          "answer": "",
+          "explanation": "The 'sorted()' function returns a new sorted list from the elements of any sequence.",
+          "difficulty": ""
+        }
+      ],
+      "behavioral": [],
+      "coding": [
+        {
+          "problem": "Write a Python function to calculate the factorial of a given integer.",
+          "solution": "def factorial(n): return 1 if n == 0 else n * factorial(n-1)"
+        }
+      ],
+      "system_design": []
+    }
+  },
+  {
+    "time": "2026-02-06 03:35",
+    "data": {
+      "technical": [
+        {
+          "type": "mcq",
+          "question": "What is the primary use of Python?",
+          "options": [
+            "Web Development",
+            "Mobile App Development",
+            "Data Analysis",
+            "Machine Learning"
+          ],
+          "answer": "",
+          "explanation": "Python is widely used for data analysis, machine learning, and scientific computing.",
+          "difficulty": ""
+        },
+        {
+          "type": "mcq",
+          "question": "Which of the following is a key feature of the React library?",
+          "options": [
+            "MVC Architecture",
+            "Virtual DOM",
+            "TypeScript Integration",
+            "Server-Side Rendering"
+          ],
+          "answer": "",
+          "explanation": "React's virtual DOM is a lightweight in-memory representation of the real DOM, which improves performance.",
+          "difficulty": ""
+        },
+        {
+          "type": "mcq",
+          "question": "What is the purpose of the 'this' keyword in JavaScript?",
+          "options": [
+            "To access global variables",
+            "To access local variables",
+            "To access object properties",
+            "To access function arguments"
+          ],
+          "answer": "",
+          "explanation": "In JavaScript, 'this' refers to the current object being executed.",
+          "difficulty": ""
+        },
+        {
+          "type": "mcq",
+          "question": "Which of the following is a popular front-end framework?",
+          "options": [
+            "Angular",
+            "Vue.js",
+            "Ember.js",
+            "All of the above"
+          ],
+          "answer": "",
+          "explanation": "Angular, Vue.js, and Ember.js are all popular front-end frameworks.",
+          "difficulty": ""
+        }
+      ],
+      "behavioral": [],
+      "coding": [
+        {
+          "problem": "Write a function that takes a list of integers and returns the maximum sum of a contiguous subarray.",
+          "solution": "def max_subarray_sum(nums): max_sum = float('-inf') current_sum = 0 for num in nums: current_sum = max(num, current_sum + num) max_sum = max(max_sum, current_sum) return max_sum"
+        }
+      ],
+      "system_design": []
+    }
+  },
+  {
+    "time": "2026-02-06 03:36",
+    "data": {
+      "technical": [
+        {
+          "type": "mcq",
+          "question": "What is the primary purpose of using a framework like React?",
+          "options": [
+            "To build a full-stack application",
+            "To create a single-page application",
+            "To improve code organization and reusability",
+            "To learn JavaScript fundamentals"
+          ],
+          "answer": "",
+          "explanation": "A framework like React is used to improve code organization and reusability, making it easier to build and maintain complex user interfaces.",
+          "difficulty": ""
+        },
+        {
+          "type": "mcq",
+          "question": "What is the difference between null and undefined in JavaScript?",
+          "options": [
+            "null is a primitive value, while undefined is an object",
+            "undefined is a primitive value, while null is an object",
+            "null and undefined are both primitive values",
+            "null and undefined are both objects"
+          ],
+          "answer": "",
+          "explanation": "undefined is a primitive value, while null is a primitive value that represents the intentional absence of any object value.",
+          "difficulty": ""
+        },
+        {
+          "type": "mcq",
+          "question": "What is the purpose of the 'this' keyword in JavaScript?",
+          "options": [
+            "To access global variables",
+            "To access local variables",
+            "To access object properties",
+            "To access function parameters"
+          ],
+          "answer": "",
+          "explanation": "The 'this' keyword is used to access object properties and methods.",
+          "difficulty": ""
+        },
+        {
+          "type": "mcq",
+          "question": "What is the difference between async/await and promises in JavaScript?",
+          "options": [
+            "async/await is used for synchronous code, while promises are used for asynchronous code",
+            "async/await is used for asynchronous code, while promises are used for synchronous code",
+            "async/await is a syntax sugar for promises",
+            "async/await is a replacement for promises"
+          ],
+          "answer": "",
+          "explanation": "async/await is a syntax sugar for promises, making it easier to write asynchronous code that is easier to read and maintain.",
+          "difficulty": ""
+        }
+      ],
+      "behavioral": [],
+      "coding": [
+        {
+          "problem": "Write a function that takes a list of integers as input and returns the maximum sum of a contiguous subarray.",
+          "solution": "def max_subarray_sum(nums): max_sum = float('-inf') current_sum = 0 for num in nums: current_sum = max(num, current_sum + num) max_sum = max(max_sum, current_sum) return max_sum"
+        }
+      ],
+      "system_design": []
+    }
+  },
+  {
+    "time": "2026-02-06 03:40",
+    "data": {
+      "technical": [
+        {
+          "type": "mcq",
+          "question": "What is the primary purpose of the 'this' keyword in Python?",
+          "options": [
+            "To access global variables",
+            "To access instance variables",
+            "To access class variables",
+            "To access module variables"
+          ],
+          "answer": "",
+          "explanation": "The 'this' keyword in Python is used to access instance variables and methods.",
+          "difficulty": ""
+        },
+        {
+          "type": "mcq",
+          "question": "What is the difference between list and tuple in Python?",
+          "options": [
+            "Lists are immutable, tuples are mutable",
+            "Lists are mutable, tuples are immutable",
+            "Lists are used for strings, tuples are used for numbers",
+            "Lists are used for numbers, tuples are used for strings"
+          ],
+          "answer": "",
+          "explanation": "Lists are mutable, while tuples are immutable.",
+          "difficulty": ""
+        },
+        {
+          "type": "mcq",
+          "question": "What is the purpose of the 'yield' keyword in Python?",
+          "options": [
+            "To create a loop",
+            "To create a recursive function",
+            "To create a generator",
+            "To create a decorator"
+          ],
+          "answer": "",
+          "explanation": "The 'yield' keyword is used to create generators in Python.",
+          "difficulty": ""
+        },
+        {
+          "type": "mcq",
+          "question": "What is the difference between '==' and 'is' operators in Python?",
+          "options": [
+            "'==' checks for equality, 'is' checks for identity",
+            "'==' checks for identity, 'is' checks for equality",
+            "'==' checks for strings, 'is' checks for numbers",
+            "'==' checks for numbers, 'is' checks for strings"
+          ],
+          "answer": "",
+          "explanation": "The '==' operator checks for equality, while the 'is' operator checks for identity.",
+          "difficulty": ""
+        }
+      ],
+      "behavioral": [],
+      "coding": [
+        {
+          "problem": "Write a function to find the maximum sum of a subarray within a given array of integers.",
+          "solution": "The solution to this problem can be implemented using Kadane's algorithm, which iterates through the array and keeps track of the maximum sum seen so far and the maximum sum ending at the current position."
+        },
+        {
+          "problem": "Write a function to reverse a string in Python.",
+          "solution": "The solution to this problem can be implemented using slicing, which returns a reversed copy of the string."
+        }
+      ],
+      "system_design": []
+    }
+  },
+  {
+    "time": "2026-02-06 03:48",
+    "data": {
+      "technical": [
+        {
+          "type": "mcq",
+          "question": "What is the primary purpose of a frontend developer?",
+          "options": [
+            "To handle backend operations",
+            "To manage database queries",
+            "To create user interface and user experience",
+            "To handle network protocols"
+          ],
+          "answer": "To handle backend operations",
+          "explanation": "Frontend developers are responsible for creating the user interface and user experience of a website or application.",
+          "difficulty": ""
+        },
+        {
+          "type": "mcq",
+          "question": "What is the primary language used by a frontend developer?",
+          "options": [
+            "Java",
+            "Python",
+            "JavaScript",
+            "C++"
+          ],
+          "answer": "Java",
+          "explanation": "JavaScript is the primary language used by frontend developers for creating dynamic user interfaces and user experiences.",
+          "difficulty": ""
+        },
+        {
+          "type": "mcq",
+          "question": "What is the term for the process of improving the user experience of a website or application?",
+          "options": [
+            "Refactoring",
+            "Debugging",
+            "Testing",
+            "User Experience Optimization"
+          ],
+          "answer": "Refactoring",
+          "explanation": "User Experience Optimization is the term for the process of improving the user experience of a website or application.",
+          "difficulty": ""
+        },
+        {
+          "type": "mcq",
+          "question": "What is the primary framework used by a frontend developer for building responsive user interfaces?",
+          "options": [
+            "React",
+            "Angular",
+            "Vue.js",
+            "Ember.js"
+          ],
+          "answer": "React",
+          "explanation": "React is the primary framework used by frontend developers for building responsive user interfaces.",
+          "difficulty": ""
+        }
+      ],
+      "behavioral": [],
+      "coding": [
+        {
+          "problem": "Implement a function that takes a string as input and returns the string with all vowels removed.",
+          "solution": "def remove_vowels(s): return ''.join([c for c in s if c.lower() not in 'aeiou'])"
+        }
+      ],
+      "system_design": []
+    }
+  },
+  {
+    "time": "2026-02-06 03:51",
+    "data": {
+      "technical": [
+        {
+          "type": "mcq",
+          "question": "What is the primary purpose of the 'requests' library in Python?",
+          "options": [
+            "To parse HTML",
+            "To make HTTP requests",
+            "To handle JSON data",
+            "To work with databases"
+          ],
+          "answer": "To parse HTML",
+          "explanation": "The 'requests' library is used to make HTTP requests in Python, allowing developers to send HTTP requests and receive responses.",
+          "difficulty": ""
+        },
+        {
+          "type": "mcq",
+          "question": "What is the difference between 'list' and 'tuple' in Python?",
+          "options": [
+            "List is mutable and tuple is immutable",
+            "List is immutable and tuple is mutable",
+            "List is used for strings and tuple is used for numbers",
+            "List is used for numbers and tuple is used for strings"
+          ],
+          "answer": "List is mutable and tuple is immutable",
+          "explanation": "Lists are mutable, meaning their contents can be modified after creation, whereas tuples are immutable, meaning their contents cannot be modified after creation.",
+          "difficulty": ""
+        },
+        {
+          "type": "mcq",
+          "question": "What is the purpose of the 'self' parameter in Python classes?",
+          "options": [
+            "To pass arguments to methods",
+            "To refer to the current instance of the class",
+            "To import modules",
+            "To create objects"
+          ],
+          "answer": "To pass arguments to methods",
+          "explanation": "The 'self' parameter is used to refer to the current instance of the class, allowing methods to access and modify the class's attributes.",
+          "difficulty": ""
+        },
+        {
+          "type": "mcq",
+          "question": "What is the difference between '=='' and '!=' in Python?",
+          "options": [
+            "== is used for equality and != is used for inequality",
+            "== is used for inequality and != is used for equality",
+            "== is used for numbers and != is used for strings",
+            "== is used for strings and != is used for numbers"
+          ],
+          "answer": "== is used for equality and != is used for inequality",
+          "explanation": "The '==' operator checks for equality, while the '!=' operator checks for inequality.",
+          "difficulty": ""
+        }
+      ],
+      "behavioral": [],
+      "coding": [],
+      "system_design": []
+    }
+  },
+  {
+    "time": "2026-02-06 03:52",
+    "data": {
+      "technical": [
+        {
+          "type": "mcq",
+          "question": "What is the primary use of the 'requests' library in Python?",
+          "options": [
+            "To create a GUI for a web application",
+            "To make HTTP requests",
+            "To parse JSON data",
+            "To create a RESTful API"
+          ],
+          "answer": "To create a GUI for a web application",
+          "explanation": "The 'requests' library is used to make HTTP requests in Python.",
+          "difficulty": ""
+        },
+        {
+          "type": "mcq",
+          "question": "What is the difference between 'list' and 'tuple' in Python?",
+          "options": [
+            "List is mutable and tuple is immutable",
+            "List is immutable and tuple is mutable",
+            "List is faster and tuple is slower",
+            "List is slower and tuple is faster"
+          ],
+          "answer": "List is mutable and tuple is immutable",
+          "explanation": "Lists are mutable, meaning they can be changed after creation, while tuples are immutable.",
+          "difficulty": ""
+        },
+        {
+          "type": "mcq",
+          "question": "What is the purpose of the 'try-except' block in Python?",
+          "options": [
+            "To handle errors and exceptions",
+            "To optimize code execution",
+            "To improve code readability",
+            "To reduce code size"
+          ],
+          "answer": "To handle errors and exceptions",
+          "explanation": "The 'try-except' block is used to handle errors and exceptions in Python.",
+          "difficulty": ""
+        },
+        {
+          "type": "mcq",
+          "question": "What is the difference between 'async' and 'sync' functions in Python?",
+          "options": [
+            "Async functions are slower and sync functions are faster",
+            "Async functions are faster and sync functions are slower",
+            "Async functions are non-blocking and sync functions are blocking",
+            "Async functions are blocking and sync functions are non-blocking"
+          ],
+          "answer": "Async functions are slower and sync functions are faster",
+          "explanation": "Async functions are non-blocking, meaning they do not block the execution of other code, while sync functions are blocking.",
+          "difficulty": ""
+        }
+      ],
+      "behavioral": [],
+      "coding": [
+        {
+          "problem": "Write a Python function to find the maximum value in a list of numbers.",
+          "solution": "def find_max(numbers): return max(numbers)"
+        },
+        {
+          "problem": "Write a Python function to reverse a string.",
+          "solution": "def reverse_string(s): return s[::-1]"
+        },
+        {
+          "problem": "Write a Python function to find the average value in a list of numbers.",
+          "solution": "def find_average(numbers): return sum(numbers) / len(numbers)"
+        },
+        {
+          "problem": "Write a Python function to check if a string is a palindrome.",
+          "solution": "def is_palindrome(s): return s == s[::-1]"
+        }
+      ],
+      "system_design": []
+    }
+  },
+  {
+    "time": "2026-02-06 03:52",
+    "data": {
+      "technical": [
+        {
+          "type": "mcq",
+          "question": "What is the primary purpose of the 'this' keyword in JavaScript?",
+          "options": [
+            "To access global variables",
+            "To access local variables",
+            "To access class properties",
+            "To access function parameters"
+          ],
+          "answer": "To access global variables",
+          "explanation": "The 'this' keyword in JavaScript is used to access the properties and methods of the current class instance.",
+          "difficulty": ""
+        },
+        {
+          "type": "mcq",
+          "question": "Which of the following data types in Python is mutable?",
+          "options": [
+            "int",
+            "float",
+            "str",
+            "list"
+          ],
+          "answer": "int",
+          "explanation": "In Python, lists are mutable, meaning they can be modified after creation.",
+          "difficulty": ""
+        },
+        {
+          "type": "mcq",
+          "question": "What is the purpose of the 'async' keyword in JavaScript?",
+          "options": [
+            "To define a function that returns a promise",
+            "To define a function that returns a value",
+            "To define a function that throws an error",
+            "To define a function that returns a value and a promise"
+          ],
+          "answer": "To define a function that returns a promise",
+          "explanation": "The 'async' keyword in JavaScript is used to define a function that returns a promise.",
+          "difficulty": ""
+        },
+        {
+          "type": "mcq",
+          "question": "Which of the following Python libraries is used for data analysis?",
+          "options": [
+            "requests",
+            "numpy",
+            "pandas",
+            "matplotlib"
+          ],
+          "answer": "requests",
+          "explanation": "The 'pandas' library in Python is used for data analysis and manipulation.",
+          "difficulty": ""
+        },
+        {
+          "type": "mcq",
+          "question": "What is the purpose of the 'try' block in exception handling?",
+          "options": [
+            "To catch exceptions",
+            "To throw exceptions",
+            "To handle exceptions",
+            "To ignore exceptions"
+          ],
+          "answer": "To catch exceptions",
+          "explanation": "The 'try' block in exception handling is used to handle exceptions that may occur during the execution of a block of code.",
+          "difficulty": ""
+        }
+      ],
+      "behavioral": [
+        {
+          "type": "mcq",
+          "question": "Can you describe a situation where you had to debug a complex issue in a production environment?",
+          "options": [
+            "I used a debugger to step through the code and identify the issue",
+            "I used a logging framework to track the issue and identify the root cause",
+            "I used a combination of both a debugger and a logging framework to identify the issue",
+            "I was unable to identify the issue"
+          ],
+          "answer": "I used a debugger to step through the code and identify the issue",
+          "explanation": "A good developer should be able to describe a situation where they had to debug a complex issue in a production environment and explain the steps they took to resolve it.",
+          "difficulty": ""
+        },
+        {
+          "type": "mcq",
+          "question": "Can you describe a situation where you had to work with a team to resolve a complex issue?",
+          "options": [
+            "I worked with the team to identify the issue and implement a solution",
+            "I worked with the team to identify the issue, but implemented the solution myself",
+            "I was unable to work with the team to resolve the issue",
+            "I worked with the team to identify the issue, but the solution was implemented by someone else"
+          ],
+          "answer": "I worked with the team to identify the issue and implement a solution",
+          "explanation": "A good developer should be able to describe a situation where they had to work with a team to resolve a complex issue and explain their role in the process.",
+          "difficulty": ""
+        },
+        {
+          "type": "mcq",
+          "question": "Can you describe a situation where you had to communicate technical information to a non-technical stakeholder?",
+          "options": [
+            "I used technical jargon to explain the issue to the stakeholder",
+            "I used a simple explanation to explain the issue to the stakeholder",
+            "I was unable to communicate the issue to the stakeholder",
+            "I used a combination of both technical jargon and a simple explanation to communicate the issue"
+          ],
+          "answer": "I used technical jargon to explain the issue to the stakeholder",
+          "explanation": "A good developer should be able to describe a situation where they had to communicate technical information to a non-technical stakeholder and explain how they communicated the information.",
+          "difficulty": ""
+        },
+        {
+          "type": "mcq",
+          "question": "Can you describe a situation where you had to adapt to a new technology or framework?",
+          "options": [
+            "I was able to adapt quickly to the new technology or framework",
+            "I struggled to adapt to the new technology or framework",
+            "I was unable to adapt to the new technology or framework",
+            "I worked with a team to adapt to the new technology or framework"
+          ],
+          "answer": "I was able to adapt quickly to the new technology or framework",
+          "explanation": "A good developer should be able to describe a situation where they had to adapt to a new technology or framework and explain how they adapted.",
+          "difficulty": ""
+        },
+        {
+          "type": "mcq",
+          "question": "Can you describe a situation where you had to prioritize multiple tasks and meet a deadline?",
+          "options": [
+            "I was able to prioritize the tasks effectively and meet the deadline",
+            "I struggled to prioritize the tasks and meet the deadline",
+            "I was unable to prioritize the tasks and meet the deadline",
+            "I worked with a team to prioritize the tasks and meet the deadline"
+          ],
+          "answer": "I was able to prioritize the tasks effectively and meet the deadline",
+          "explanation": "A good developer should be able to describe a situation where they had to prioritize multiple tasks and meet a deadline and explain how they prioritized the tasks.",
+          "difficulty": ""
+        }
+      ],
+      "coding": [
+        {
+          "problem": "Write a function that takes a string as input and returns the string with all vowels removed.",
+          "solution": "def remove_vowels(s): return ''.join([c for c in s if c.lower() not in 'aeiou'])"
+        },
+        {
+          "problem": "Write a function that takes a list of numbers as input and returns the sum of the squares of the numbers.",
+          "solution": "def sum_of_squares(numbers): return sum([n**2 for n in numbers])"
+        },
+        {
+          "problem": "Write a function that takes a string as input and returns the string with all duplicate characters removed.",
+          "solution": "def remove_duplicates(s): return ''.join(sorted(set(s)))"
+        },
+        {
+          "problem": "Write a function that takes a list of numbers as input and returns the maximum number in the list.",
+          "solution": "def find_max(numbers): return max(numbers)"
+        },
+        {
+          "problem": "Write a function that takes a string as input and returns the string with all characters reversed.",
+          "solution": "def reverse_string(s): return s[::-1]"
+        }
+      ],
+      "system_design": [
+        {
+          "type": "mcq",
+          "question": "Design a system to manage user authentication and authorization.",
+          "options": [
+            "Use a centralized authentication system with a database to store user credentials",
+            "Use a decentralized authentication system with a blockchain to store user credentials",
+            "Use a combination of both a centralized and decentralized authentication system",
+            "Use a token-based authentication system"
+          ],
+          "answer": "Use a centralized authentication system with a database to store user credentials",
+          "explanation": "A good system designer should be able to describe a system to manage user authentication and authorization and explain the trade-offs between different design options.",
+          "difficulty": ""
+        },
+        {
+          "type": "mcq",
+          "question": "Design a system to manage a large dataset of user information.",
+          "options": [
+            "Use a relational database to store the user information",
+            "Use a NoSQL database to store the user information",
+            "Use a combination of both a relational and NoSQL database",
+            "Use a data warehousing system"
+          ],
+          "answer": "Use a relational database to store the user information",
+          "explanation": "A good system designer should be able to describe a system to manage a large dataset of user information and explain the trade-offs between different design options.",
+          "difficulty": ""
+        },
+        {
+          "type": "mcq",
+          "question": "Design a system to handle high traffic and large amounts of data.",
+          "options": [
+            "Use a monolithic architecture with a single server",
+            "Use a microservices architecture with multiple servers",
+            "Use a combination of both a monolithic and microservices architecture",
+            "Use a cloud-based infrastructure"
+          ],
+          "answer": "Use a monolithic architecture with a single server",
+          "explanation": "A good system designer should be able to describe a system to handle high traffic and large amounts of data and explain the trade-offs between different design options.",
+          "difficulty": ""
+        },
+        {
+          "type": "mcq",
+          "question": "Design a system to manage user preferences and settings.",
+          "options": [
+            "Use a centralized system to store user preferences and settings",
+            "Use a decentralized system to store user preferences and settings",
+            "Use a combination of both a centralized and decentralized system",
+            "Use a token-based system"
+          ],
+          "answer": "Use a centralized system to store user preferences and settings",
+          "explanation": "A good system designer should be able to describe a system to manage user preferences and settings and explain the trade-offs between different design options.",
+          "difficulty": ""
+        },
+        {
+          "type": "mcq",
+          "question": "Design a system to handle real-time data and updates.",
+          "options": [
+            "Use a message queue to handle real-time data and updates",
+            "Use a streaming system to handle real-time data and updates",
+            "Use a combination of both a message queue and streaming system",
+            "Use a batch processing system"
+          ],
+          "answer": "Use a message queue to handle real-time data and updates",
+          "explanation": "A good system designer should be able to describe a system to handle real-time data and updates and explain the trade-offs between different design options.",
+          "difficulty": ""
+        }
+      ]
+    }
+  },
+  {
+    "time": "2026-02-06 03:58",
+    "data": {
+      "technical": [
+        {
+          "type": "mcq",
+          "question": "What is the primary purpose of JavaScript in web development?",
+          "options": [
+            "To create server-side applications",
+            "To handle user interactions and dynamic content",
+            "To design and implement databases",
+            "To write system-level code"
+          ],
+          "answer": "To create server-side applications",
+          "explanation": "JavaScript is primarily used for handling user interactions and dynamic content on the client-side.",
+          "difficulty": ""
+        },
+        {
+          "type": "mcq",
+          "question": "Which of the following Python libraries is used for data analysis?",
+          "options": [
+            "NumPy",
+            "Pandas",
+            "Matplotlib",
+            "Requests"
+          ],
+          "answer": "NumPy",
+          "explanation": "NumPy is a library used for efficient numerical computation, but it's not the primary choice for data analysis. Pandas is the most commonly used library for data analysis in Python.",
+          "difficulty": ""
+        },
+        {
+          "type": "mcq",
+          "question": "What is the purpose of the 'this' keyword in JavaScript?",
+          "options": [
+            "To refer to a global object",
+            "To refer to a function's context",
+            "To refer to a class's instance",
+            "To refer to a module's exports"
+          ],
+          "answer": "To refer to a global object",
+          "explanation": "The 'this' keyword in JavaScript refers to the context in which a function is being called.",
+          "difficulty": ""
+        },
+        {
+          "type": "mcq",
+          "question": "Which of the following is a key characteristic of a monolithic architecture?",
+          "options": [
+            "Loose coupling between components",
+            "Tight coupling between components",
+            "Microservices-based design",
+            "Event-driven architecture"
+          ],
+          "answer": "Loose coupling between components",
+          "explanation": "A monolithic architecture is characterized by tight coupling between components, where all components are part of a single, unified system.",
+          "difficulty": ""
+        },
+        {
+          "type": "mcq",
+          "question": "What is the primary advantage of using a CSS preprocessor like Sass?",
+          "options": [
+            "Improved performance",
+            "Simplified debugging",
+            "Increased flexibility",
+            "Enhanced maintainability"
+          ],
+          "answer": "Improved performance",
+          "explanation": "The primary advantage of using a CSS preprocessor like Sass is increased flexibility, as it allows for more complex and modular CSS code.",
+          "difficulty": ""
+        }
+      ],
+      "behavioral": [
+        {
+          "type": "mcq",
+          "question": "What do you do when you encounter a difficult technical problem?",
+          "options": [
+            "You try to solve it on your own without asking for help",
+            "You ask a colleague or mentor for assistance",
+            "You search for solutions online and try to implement them",
+            "You escalate the issue to a higher authority"
+          ],
+          "answer": "You try to solve it on your own without asking for help",
+          "explanation": "When encountering a difficult technical problem, it's often best to ask a colleague or mentor for assistance, as they may have more experience or knowledge to share.",
+          "difficulty": ""
+        },
+        {
+          "type": "mcq",
+          "question": "How do you prioritize tasks and manage your time effectively?",
+          "options": [
+            "You prioritize tasks based on their urgency and importance",
+            "You prioritize tasks based on their ease of completion",
+            "You prioritize tasks based on their potential impact",
+            "You prioritize tasks randomly"
+          ],
+          "answer": "You prioritize tasks based on their urgency and importance",
+          "explanation": "Prioritizing tasks based on their urgency and importance is a key aspect of effective time management and task prioritization.",
+          "difficulty": ""
+        },
+        {
+          "type": "mcq",
+          "question": "What do you do when you're working on a team project and you disagree with a team member's approach?",
+          "options": [
+            "You argue with the team member and try to convince them of your approach",
+            "You respectfully express your concerns and try to find a compromise",
+            "You ignore the team member's approach and do things your own way",
+            "You escalate the issue to a higher authority"
+          ],
+          "answer": "You argue with the team member and try to convince them of your approach",
+          "explanation": "When working on a team project and disagreeing with a team member's approach, it's best to respectfully express your concerns and try to find a compromise.",
+          "difficulty": ""
+        },
+        {
+          "type": "mcq",
+          "question": "How do you handle feedback or constructive criticism?",
+          "options": [
+            "You become defensive and dismissive",
+            "You thank the person for their feedback and ask for clarification",
+            "You ignore the feedback and continue with your original plan",
+            "You become aggressive and confrontational"
+          ],
+          "answer": "You become defensive and dismissive",
+          "explanation": "When receiving feedback or constructive criticism, it's essential to thank the person for their feedback and ask for clarification, as this shows that you value their input and are willing to learn.",
+          "difficulty": ""
+        },
+        {
+          "type": "mcq",
+          "question": "What do you do when you're working on a project and you realize that you've made a mistake?",
+          "options": [
+            "You try to cover up the mistake and hope no one notices",
+            "You own up to the mistake and apologize for it",
+            "You try to shift the blame to someone else",
+            "You ignore the mistake and continue with the project"
+          ],
+          "answer": "You try to cover up the mistake and hope no one notices",
+          "explanation": "When working on a project and realizing that you've made a mistake, it's essential to own up to the mistake and apologize for it, as this shows accountability and a commitment to quality.",
+          "difficulty": ""
+        }
+      ],
+      "coding": [
+        {
+          "problem": "Write a function that takes a string as input and returns the string with all vowels removed.",
+          "solution": "def remove_vowels(s): return ''.join([c for c in s if c.lower() not in 'aeiou'])"
+        },
+        {
+          "problem": "Write a function that takes a list of integers as input and returns the sum of all even numbers in the list.",
+          "solution": "def sum_even_numbers(numbers): return sum([n for n in numbers if n % 2 == 0])"
+        },
+        {
+          "problem": "Write a function that takes a dictionary as input and returns a new dictionary with the same keys but with values that are the square of the original values.",
+          "solution": "def square_values(d): return {k: v**2 for k, v in d.items()}"
+        },
+        {
+          "problem": "Write a function that takes a string as input and returns the string with all duplicate characters removed.",
+          "solution": "def remove_duplicates(s): return ''.join(sorted(set(s), key=s.index))"
+        },
+        {
+          "problem": "Write a function that takes a list of strings as input and returns the longest string in the list.",
+          "solution": "def longest_string(strings): return max(strings, key=len)"
+        }
+      ],
+      "system_design": [
+        {
+          "type": "mcq",
+          "question": "What is the primary advantage of using a microservices architecture?",
+          "options": [
+            "Improved scalability",
+            "Simplified maintenance",
+            "Increased flexibility",
+            "Enhanced security"
+          ],
+          "answer": "Improved scalability",
+          "explanation": "The primary advantage of using a microservices architecture is increased flexibility, as it allows for more independent and modular services.",
+          "difficulty": ""
+        },
+        {
+          "type": "mcq",
+          "question": "What is the primary disadvantage of using a monolithic architecture?",
+          "options": [
+            "Improved scalability",
+            "Simplified maintenance",
+            "Increased flexibility",
+            "Tight coupling between components"
+          ],
+          "answer": "Improved scalability",
+          "explanation": "The primary disadvantage of using a monolithic architecture is tight coupling between components, which can make it difficult to maintain and scale.",
+          "difficulty": ""
+        },
+        {
+          "type": "mcq",
+          "question": "What is the primary advantage of using a cloud-based infrastructure?",
+          "options": [
+            "Improved scalability",
+            "Simplified maintenance",
+            "Increased flexibility",
+            "Enhanced security"
+          ],
+          "answer": "Improved scalability",
+          "explanation": "The primary advantage of using a cloud-based infrastructure is improved scalability, as it allows for easy scaling up or down to meet changing demands.",
+          "difficulty": ""
+        },
+        {
+          "type": "mcq",
+          "question": "What is the primary disadvantage of using a centralized database?",
+          "options": [
+            "Improved scalability",
+            "Simplified maintenance",
+            "Increased flexibility",
+            "Single point of failure"
+          ],
+          "answer": "Improved scalability",
+          "explanation": "The primary disadvantage of using a centralized database is a single point of failure, as a single failure can bring down the entire system.",
+          "difficulty": ""
+        },
+        {
+          "type": "mcq",
+          "question": "What is the primary advantage of using a containerization platform like Docker?",
+          "options": [
+            "Improved scalability",
+            "Simplified maintenance",
+            "Increased flexibility",
+            "Enhanced security"
+          ],
+          "answer": "Improved scalability",
+          "explanation": "The primary advantage of using a containerization platform like Docker is increased flexibility, as it allows for easy deployment and management of applications in different environments.",
+          "difficulty": ""
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>History</title>
+
+<link rel="icon" type="image/png" href="/static/favicon.png">
+
+
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/static/styles.css">
+</head>
+
+<body class="dark">
+
+<header>
+  <div class="logo" onclick="location.href='/'">
+    <img src="/static/logo.png">
+    <span>AIQG</span>
+  </div>
+
+  <div class="top-right">
+    <button onclick="location.href='/'">Back</button>
+  </div>
+</header>
+
+
+<main>
+
+<h1>History</h1>
+
+<div id="hist"></div>
+
+</main>
+
+<script>
+
+fetch("/api/history")
+.then(r=>r.json())
+.then(data=>{
+
+ const hist=document.getElementById("hist");
+
+ if(!data.length){
+  hist.innerHTML="<p>No history yet.</p>";
+  return;
+ }
+
+ data.reverse().forEach(session=>{
+
+  let html=`<div class="card" style="margin-bottom:40px">
+   <b>${session.time}</b><br><br>`;
+
+  for(const sec in session.data){
+
+   if(!session.data[sec].length) continue;
+
+   html+=`<h3>${sec.toUpperCase()}</h3>`;
+
+   session.data[sec].forEach((q,i)=>{
+
+    html+=`
+     <div class="result">
+      <b>Q${i+1}. ${q.question}</b>`;
+
+    if(q.options){
+     q.options.forEach(o=>{
+      html+=`<div class="option">${o}</div>`;
+     });
+    }
+
+    html+=`
+      <div style="margin-top:6px"><b>Answer:</b> ${q.answer}</div>
+      <div class="explanation">${q.explanation}</div>
+     </div>`;
+   });
+  }
+
+  html+="</div>";
+
+  hist.innerHTML+=html;
+
+ });
+
+});
+
+</script>
+
+</body>
+</html>

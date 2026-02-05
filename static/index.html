@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Automated Interview Question Generator</title>
+
+<link rel="icon" type="image/png" href="/static/favicon.png">
+
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/static/styles.css">
+
+</head>
+
+<body class="dark">
+
+<header>
+  <div class="logo" onclick="location.href='/'">
+    <img src="/static/logo.png">
+    <span>AIQG</span>
+  </div>
+
+  <div class="top-right">
+    <button onclick="toggleTheme()">🌓</button>
+    <button onclick="location.href='/history'">History</button>
+  </div>
+</header>
+
+<main>
+
+<h1>Automated Interview Question Generator</h1>
+<p class="subtitle">Generate technical interview questions instantly</p>
+
+<div class="card">
+
+<label>Job Role</label>
+<input id="role" placeholder="Backend Developer">
+
+<label>Skills</label>
+<textarea id="skills" placeholder="Python, FastAPI, SQL"></textarea>
+
+<label>Resume (optional)</label>
+<textarea id="resume"></textarea>
+
+<div class="row">
+
+<div>
+<label>Difficulty</label>
+<select id="difficulty">
+<option>Easy</option>
+<option selected>Medium</option>
+<option>Hard</option>
+</select>
+</div>
+
+<div>
+<label>Experience</label>
+<select id="experience">
+<option>Fresher</option>
+<option selected>Mid</option>
+<option>Senior</option>
+</select>
+</div>
+
+<div>
+<label>Questions</label>
+<input id="num" type="number" value="4" min="4" max="20">
+</div>
+
+</div>
+
+<div class="types">
+<label><input id="technical" type="checkbox"> Technical</label>
+<label><input id="behavioral" type="checkbox"> Behavioral</label>
+<label><input id="coding" type="checkbox"> Coding</label>
+<label><input id="system" type="checkbox"> System Design</label>
+</div>
+
+<button class="primary" onclick="generate()">Generate Questions</button>
+
+</div>
+
+<div id="results" style="display:none">
+<h2>Generated Questions</h2>
+<div id="output"></div>
+
+<button id="pdfBtn" onclick="downloadPDF()">Save as PDF</button>
+</div>
+
+</main>
+
+<div id="loader">Generating…</div>
+
+<script src="/static/script.js"></script>
+</body>
+</html>
