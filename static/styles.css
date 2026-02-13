@@ -375,3 +375,28 @@ animation:successIn .6s ease;
  color:white;
  cursor:pointer;
 }
+
+/* ===== LIGHT MODE FIX FOR OPTIONS ===== */
+
+body.light .option{
+ background:#e5e7eb;
+ color:#111827;
+}
+
+body.light .option:hover{
+ background:#d1d5db;
+}
+
+body.light .option.correct{
+ background:#16a34a !important;
+ color:white;
+}
+
+body.light .option.wrong{
+ background:#dc2626 !important;
+ color:white;
+}
+
+body.light .answer-box{
+ background:#f3f4f6;
+}

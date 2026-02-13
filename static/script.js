@@ -85,8 +85,15 @@ if(q.options){
 
  const id=Math.random();
 
+ // 🔥 COPY original options
+ let shuffled=[...q.options];
+
+ // 🔥 SHUFFLE them
+ shuffled.sort(()=>Math.random()-0.5);
+
+ // 🔥 FIND correct index AFTER shuffle
  const correctIndex =
-  q.options.findIndex(o =>
+  shuffled.findIndex(o =>
    o.trim().toLowerCase() === q.answer.trim().toLowerCase()
   );
 
@@ -94,7 +101,7 @@ if(q.options){
  <div class="result">
   <b>Q${qCount++}. ${q.question}</b>
 
-  ${q.options.map((o,i)=>`
+  ${shuffled.map((o,i)=>`
    <div class="option" onclick="select(this,${i},${correctIndex})">${o}</div>
   `).join("")}
 
@@ -106,6 +113,7 @@ if(q.options){
   </div>
  </div>`;
 }
+
 
 
 // ===== CODING QUESTIONS =====
